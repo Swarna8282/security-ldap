@@ -1,0 +1,12 @@
+---
+server:
+  port: 8811
+
+spring:
+  application:
+    name: security-ldap
+  ldap:
+    embedded:
+      ldif: classpath:ldap-data.ldif
+      base-dn: dc=springframework, dc=org
+      port: 8389
